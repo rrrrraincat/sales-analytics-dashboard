@@ -41,7 +41,7 @@ st.markdown("""
 
 def 获取数据():
     """从数据库获取清洗后的数据"""
-    数据库路径 = "/Users/ruimantan/Desktop/作品集/销售数据分析看板/企业销售决策支持系统/sales_dashboard/data/sales.db"
+    数据库路径 = "data/sales.db"
     conn = sqlite3.connect(数据库路径)
     df = pd.read_sql("SELECT * FROM 产品销售_清洗后", conn)
     conn.close()
